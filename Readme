@@ -1,0 +1,60 @@
+Explaination of code
+The code is a simple temperature conversion program written in C. It allows the user to convert temperatures between Celsius, Fahrenheit, and Kelvin based on the user's choice. The code includes:
+
+Function prototypes
+Main function with user input and conversion logic
+Various conversion functions
+1. Include the Standard Input/Output Header
+This includes the standard input/output library, which is necessary for using printf and scanf.
+
+2. Function Prototypes
+These are the function declarations, which tell the compiler that these functions exist and will be defined later. They specify the return type (double) and the parameters each function takes.
+
+3. Main Function
+Variables:
+
+choice: stores the user's choice for the type of conversion.
+temperature: stores the temperature value input by the user.
+converted_temp: stores the result of the temperature conversion.
+User Input:
+
+The user is prompted to choose a conversion type (1, 2, or 3).
+Based on the choice, the user is asked to input a temperature in the respective unit.
+Switch Statement:
+
+Case 1: Converts Celsius to Fahrenheit and Kelvin.
+Case 2: Converts Fahrenheit to Celsius and Kelvin.
+Case 3: Converts Kelvin to Celsius and Fahrenheit.
+Default Case: Handles invalid choices by printing an error message.
+4. Conversion Functions
+These functions perform specific temperature conversions:
+Celsius to Fahrenheit:
+
+Uses the formula 
+𝐹=95𝐶+32F= 59
+​ C+32.
+Celsius to Kelvin:
+
+Uses the formula 
+𝐾=𝐶+273.15
+K=C+273.15.
+Fahrenheit to Celsius:
+
+Uses the formula 
+𝐶=59(𝐹−32)C= 95
+​
+ (F−32).
+Fahrenheit to Kelvin:
+
+First converts Fahrenheit to Celsius, then adds 273.15.
+Kelvin to Celsius:
+
+Uses the formula 
+𝐶=𝐾−273.15
+C=K−273.15.
+Kelvin to Fahrenheit:
+
+First converts Kelvin to Celsius, then converts Celsius to Fahrenheit.
+Summary
+Summary
+The program is a console application that allows the user to convert temperatures between Celsius, Fahrenheit, and Kelvin based on their choice. It uses basic formulas for temperature conversion and handles invalid input by checking the user's choice.
